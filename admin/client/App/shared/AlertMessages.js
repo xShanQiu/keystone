@@ -80,6 +80,8 @@ var AlertMessages = React.createClass({
 					} else {
 						return <Alert type="danger">{upcase(error.error)}</Alert>;
 					}
+				case 'database error':
+					return <Alert type="danger">{upcase(error.detail.message)}</Alert>;
 				default:
 					return <Alert type="danger">{upcase(error.error)}</Alert>;
 			}
