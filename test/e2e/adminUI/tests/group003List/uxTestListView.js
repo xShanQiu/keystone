@@ -48,8 +48,6 @@ module.exports = {
 			.waitForItemScreen();
 
 		browser.app
-			.click('@fieldListsMenu')
-			.waitForListScreen()
 			.click('@nameListSubmenu')
 			.waitForListScreen();
 
@@ -88,8 +86,6 @@ module.exports = {
 			.waitForItemScreen();
 
 		browser.app
-			.click('@fieldListsMenu')
-			.waitForListScreen()
 			.click('@nameListSubmenu')
 			.waitForListScreen();
 
